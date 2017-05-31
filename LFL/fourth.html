@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App</title>
+    <link rel="stylesheet" href="../styles/LFL.css">
+    <link rel="stylesheet" href="../styles/modal.css">
+</head>
+<body>
+<div class="top">
+    <h3>Landen vinden hun eigen weg</h3>
+</div>
+<div class="middle">
+    <img id="europa" src="../images/BlankMap-Europe2.png">
+
+    <a id="myBtn"><img id="handje" src="../images/handje.png"></a>
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Vrachtwagen Chauffeur</h2>
+            <p>Hai, Mijn naam is pieter en ik ben vrachtwagen chauffeur.
+            Ik werk voor mezelf al gaat dat steeds moeilijker, door de groei van alle grote bedrijfen word het steeds moeilijker om klussen te vinden.
+            Ik verwacht daarom ook dat ik binnekort mijn bedrijf zal verliezen.</p>
+            <br>
+            <h2>future Vrachtwagen Chauffeur</h2>
+            <p>Mijn naam is Kees, Ik was vrachtwagen chauffeur en werkte voor mijzelf. Ik ben moeten stoppen door de druk van grotere
+                bedrijfen die me uiteindelijk hebben opgekocht aangezien ik geen werk kon vinden</p>
+        </div>
+
+    </div>
+</div>
+<div class="bottom">
+    <a id="below" href="fifth.html"> > </a>
+</div>
+<script>
+var modal = document.getElementById('myModal');
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>

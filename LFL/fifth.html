@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App</title>
+    <link rel="stylesheet" href="../styles/LFL.css">
+    <link rel="stylesheet" href="../styles/modal.css">
+</head>
+<body>
+<div class="top">
+    <h3>Maar zo gaan er ook langzaam banen weg uit Europa</h3>
+</div>
+<div class="middle">
+    <img id="europa" src="../images/BlankMap-Europe3.png">
+
+    <a id="myBtn"><img id="handje" src="../images/handje.png"></a>
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Kassa medewerker</h2>
+            <p>Mijn naam is Asaaf en ik ben Kassa medewerker bij de Albert-Hein. Ik werk al een hele tijd hier,
+                zie steeds meer collega's weg bezuinigd worden...
+            of eerder vervangen door de technologie. Het begon allemaal met de zelf kassa's...
+                ik vrees voor mijn baan.</p>
+            <br>
+            <h2>Future Kassa medewerker</h2>
+            <p>Ik ben gerard, oud collega van Asaaf. Helaas wilde zei meer gebruik maken van zelf kassa's dan normale.
+                Nu gaat alles geautomatiseerd. Er werken amper nog mensen in de AH deze dagen.
+            </p>
+        </div>
+
+    </div>
+</div>
+<div class="bottom">
+    <a id="below" href="sixth.html"> > </a>
+</div>
+<script>
+var modal = document.getElementById('myModal');
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
